@@ -1,0 +1,417 @@
+/* ======================== */
+/*        Estilos Globais        */
+/* ======================== */
+body {
+    margin: 0; /* Remove a margem padrão da página */
+    font-family: Arial, sans-serif; /* Define a fonte principal */
+    background-color: #f4f4f4; /* Cor de fundo clara padrão */
+    transition: background-color 0.3s, color 0.3s; /* Suaviza transições de tema */
+}
+
+/* ======================== */
+/*       Modo Escuro        */
+/* ======================== */
+body.dark-mode {
+    background-color: #121212; /* Fundo escuro para o modo dark */
+    color: #f4f4f4; /* Texto claro */
+}
+
+body.dark-mode .topo {
+    background-color: #1e1e1e; /* Cabeçalho escuro */
+    color: white;
+}
+
+body.dark-mode .menu a {
+    color: #f4f4f4; /* Links claros */
+}
+
+body.dark-mode .menu a:hover {
+    color: #00ffd0; /* Hover com destaque */
+}
+
+body.dark-mode .banner {
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364); /* Banner escuro */
+}
+
+body.dark-mode .texto h2 {
+    color: #00ffd0; /* Título com cor chamativa */
+    border-bottom: 4px solid #444; /* Linha mais escura */
+}
+
+body.dark-mode .sobre {
+    background-color: #1c1c1c; /* Fundo escuro para seção */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05); /* Sombra mais sutil no dark */
+}
+
+body.dark-mode .texto p {
+    color: #ddd; /* Texto mais claro */
+}
+
+/* ============================== */
+/* Botão de Alternância de Tema */
+/* ============================== */
+.toggle-theme {
+    position: fixed; /* Fixa no canto da tela */
+    top: 10px;
+    right: 10px;
+    background-color: #0b6a75; /* Cor de fundo */
+    color: white; /* Cor do ícone/texto */
+    border: none; /* Sem borda */
+    padding: 10px 15px; /* Espaçamento interno */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-weight: bold; /* Negrito */
+    z-index: 1000; /* Fica sobre outros elementos */
+}
+
+.toggle-theme:hover {
+    background-color: #088993; /* Cor ao passar o mouse */
+}
+
+/* ======================== */
+/*       Cabeçalho Topo     */
+/* ======================== */
+.topo {
+    background-color: #0b6a75;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 40px;
+}
+
+.topo h1 {
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* ======================== */
+/*       Banner Principal   */
+/* ======================== */
+.banner {
+    background: linear-gradient(to bottom, #87CEFA, #b0e0ff);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.banner h2 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* ============================ */
+/*       Frase de Boas-Vindas   */
+/* ============================ */
+.bemvindo {
+    text-align: center;
+    color: #c0392b;
+    font-size: 22px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+/* ============================ */
+/*       Seção "Quem sou eu?"  */
+/* ============================ */
+.sobre {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fefefe;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.foto {
+    width: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.texto {
+    flex: 1;
+}
+
+.texto h2 {
+    color: #007b8f;
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: 4px solid #ddd;
+    padding-bottom: 5px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.texto p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #333;
+}
+
+/* ============================ */
+/*       Dropdown Menu Styles   */
+/* ============================ */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.dropdown-contents {
+    display: none;
+    position: absolute;
+    background-color: #0b6a75;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.dropdown-contents li {
+    list-style: none;
+}
+
+.dropdown-contents li a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-contents li a:hover {
+    background-color: #088993;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-contents {
+    display: block;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .topo {
+    background-color: #0b6a75;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .topo h1 {
+    margin: 0 20px;
+    font-size: 20px;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  .banner {
+    background: linear-gradient(to bottom, #87CEFA, #b0e0ff);
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .banner h2 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .banner p {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+
+.curriculo {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(11, 106, 117, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.curriculo h2 {
+    color: #0b6a75;
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.curriculo p strong {
+    font-size: 18px;
+    color: #333333;
+}
+
+.curriculo img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(11, 106, 117, 0.3);
+}
+.portfolio {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(11, 106, 117, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.portfolio h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0b6a75;
+}
+
+.portfolio-year {
+    margin-bottom: 30px;
+}
+
+.portfolio-year p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.portfolio-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0b6a75;;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+    background-color: #0b6a75;
+    outline: none;
+}
+
+
+.certificado {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(11, 106, 117, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.certificado h2 {
+    color: #0b6a75;
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.certificado p strong {
+    font-size: 18px;
+    color: #333333;
+}
+
+.certificado img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(11, 106, 117, 0.3)
+
+}

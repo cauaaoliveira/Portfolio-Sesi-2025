@@ -1,0 +1,71 @@
+/* CSS for pages/mtm.html */
+
+.nome-pagina {
+    background-color: #0b6a75;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.trimestre {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.atividade {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    background-color: #fefefe;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.atividade {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    background-color: #fefefe;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.atividade.invertida {
+    flex-direction: row-reverse;
+}
+
+.print img {
+    max-width: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.descricao {
+    flex: 1;
+}
+
+.descricao h3 {
+    color: #0b6a75;
+    margin-top: 0;
+}
+
+.descricao p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.descricao a {
+    color: #0b6a75;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.descricao a:hover {
+    text-decoration: underline;
+}

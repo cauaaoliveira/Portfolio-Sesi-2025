@@ -1,0 +1,20 @@
+/* CSS for pages/ppe.html */
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+    color: #333;
+}
+
+h2 {
+    color: #0b6a75;
+    border-bottom: 3px solid #0b6a75;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}

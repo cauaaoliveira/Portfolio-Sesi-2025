@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+      body{
+        height: 100vh;
+        background-color: #0b6a75;
+      }
+
+      div.botoes-materias{
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: auto;
+        gap: 10px;
+      }
+
+      .botoes-materias a{
+        display: inline-block;
+        padding: 5px 20px;
+        background-color: #f4f4f4;
+        color: black;
+        text-decoration: none;
+        border-radius: 15px;
+        border: 2px solid black;
+        transition: 0.3s ease-in-out;
+      }
+
+      .botoes-materias a:hover{
+        display: inline-block;
+        padding: 5px 20px;
+        background-color: black;
+        color: #f4f4f4;
+        text-decoration: none;
+        border-radius: 15px;
+        border: 2px solid black;
+      }
+    </style>
+</head>
+<body>
+    <div class="botoes-materias">
+      <a href="linguagens.html">Linguagens</a>
+      <a href="humanas.html">Humanas</a>
+      <a href="mtm.html">Matematica</a>
+      <a href="natureza.html">Natureza</a>
+    </div>
+</body>
+</html>
